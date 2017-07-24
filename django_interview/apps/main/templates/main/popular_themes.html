@@ -1,0 +1,11 @@
+{%extends 'main/base.html'%}
+
+{%block title%}Welcome{%endblock%}
+{%block content%}
+	<p>List of Themes Ordered by Popularity:</p>
+	  <ul>
+	  	{% for theme in all_themes %}
+	    <li>{{theme}} (Score: {{theme.theme_score}})</li>
+	    {% endfor %}
+	  </ul>
+{%endblock%}

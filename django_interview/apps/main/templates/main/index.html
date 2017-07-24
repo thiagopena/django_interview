@@ -1,0 +1,8 @@
+{%extends 'main/base.html'%}
+
+{%block title%}Welcome{%endblock%}
+{%block content%}
+  <ul>
+    <li><a href="{% url 'main:get_popular_themes' %}">Popular Themes</a></li>
+  </ul>
+{%endblock%}
